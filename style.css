@@ -1,0 +1,276 @@
+@media screen and (min-width:375px) and (max-width:768px) {
+    
+    .watch_hero img{
+        display: none;
+    }
+    .heroLeftpart button{
+        margin-bottom: 50px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:798px) {
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+/* styling navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    box-shadow:0 2px 7px 4px rgba(26, 25, 25, 0.137);
+    z-index: 2; 
+    padding: 15px;
+}
+
+.container .collapse .navbar-nav{
+    margin-right: 70px;
+}
+
+.navbar .container .navbar-brand img{
+   margin-left: 0px; 
+}
+.navbar-collapse .navbar-nav a{
+    border-bottom:  2px solid  transparent;
+}
+
+.navbar-collapse .navbar-nav a:hover{
+    border-bottom:  2px solid  rgb(243, 27, 27);
+}
+/* end of navigation bar */
+
+/* styling the cover section */
+.watch_hero img{
+    margin-top: 30px; 
+    width: 260px;
+}
+.coverSection{
+    background-color: rgb(224, 224, 224);
+    justify-content: space-between;
+    align-items: center;
+
+}
+.heroLeftpart h1{
+    margin-top: 300px;
+    /* width: 85%; */
+    font-size: 75px;
+    font-weight: 700;
+    color: rgb(3, 3, 34);
+    margin-bottom: 30px;
+}
+
+.heroLeftpart p{
+    width: 77%;
+    font-size: 15px;
+    color: rgb(66, 65, 65);
+    margin-bottom: 30px;
+}
+
+button{
+    outline: none;
+    background-color: rgb(243, 27, 27);
+    border: none;
+    width: 133px;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+    font-size: 18px;
+
+    /* to change backgroung upon hover from left to right */
+    background: linear-gradient(to left,rgb(243, 27, 27) 50%, rgb(39, 39, 39) 50%) right;
+    background-size: 200%;
+    transition: 0.3s ease-out;
+}
+
+button:hover{
+    background-position: left;
+}
+/* end of cover secrion */
+
+/* styling new products section */
+
+.newProducts{
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.newProducts .container div img{
+    width: 300px;
+    transition: 0.4s all ease-in-out;
+}
+.newProducts .borderimage{
+    width: 300px;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+.newProducts .container div img:hover{
+    transform: scale(1.05);
+}
+
+.newProducts h1{
+    margin-left: 120px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.newProducts h3{ 
+    margin-top: 10px;
+    font-weight: 700;
+    margin-left: 15px;
+    font-size: 24px;
+}
+
+.newProducts p{
+    color: rgb(243, 27, 27);
+    margin-left: 130px;
+    font-weight: 700;
+}
+/* end of new products section */
+
+/* styling viewed products */
+.viewedProducts{
+    justify-content: space-between;
+    justify-items: center; 
+}
+
+.viewedProducts img{
+    transition:all 0.5s ease;
+    transform: scale(1);
+}
+.viewedProducts img:hover{
+    transform: scale(1.07);
+    filter: brightness(60%);
+    transition:all 0.5s ease;
+    overflow: hidden;
+}
+.viewedProducts .borderimage{
+    margin-bottom: 20px;
+    margin-right: 20px;
+    padding: 0px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid transparent;
+    overflow: hidden;
+} 
+
+/* end of viewed products */
+
+/* styling popular items section */
+
+.popularItems{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+    position: relative; 
+}
+.popularItems img{
+    margin-bottom: 10px;
+    border-bottom: 3px solid red;
+}
+.popularItems span{
+    width: 362px;
+    height: 60px;
+    margin-left: 0;
+    position: absolute;
+    margin-top: -70px;
+    background-color:red;
+    margin-left: -178px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+.popularItems p1{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -36px;
+    color: white;
+}
+.popularItems .add:hover span,.popularItems .add:hover i{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.popularItems .add i{
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 320px;
+    opacity: 0;
+}
+
+/* end of section popular items styling */
+
+
+/* start styling watch choice and green watch sections   */
+
+.watchChoice, .greenWatch{
+    margin-top: 100px;
+}
+.watchChoice h1 , .greenWatch h1{
+    margin-top: 140px;
+    font-size: 45px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.watchChoice p,.greenWatch p{
+    width: 75%;
+    margin-bottom: 50px;
+}
+
+.watchChoice button,.greenWatch button{
+    width: 200px;
+    padding: 15px;
+}
+
+.greenWatch .rightpart{
+   margin-right: 0;
+   margin-left: 90px;
+}
+/* end of these sections  */
+
+
+/* endWatch styling section */
+.endWatch{
+    background-color: rgb(243, 27, 27);
+    margin: 100px;
+    padding: 50px;
+    color: white;
+}
+
+.endWatch h6{
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.endWatch p{
+    font-size: 14px;
+    color: rgb(192, 192, 192);
+    width: 60%;
+}
+
+/* end of styling endWatch section */
+
+/*  footer section social media*/
+footer a,footer p{
+    text-decoration: none;
+    color: rgb(168, 167, 167);
+    font-size: 14px;
+}
+footer ul{
+    list-style-type: none;
+    margin-left: -30px;
+   
+}
+
+footer h4{
+    color: black;
+    font-size:18px;
+    font-weight: 700;
+}
+
+footer .leftpart{
+    margin-left:-100px;
+}
+/* end of footer  */
